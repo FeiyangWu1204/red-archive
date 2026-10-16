@@ -1,0 +1,35 @@
+<!doctype html><html lang="zh-CN" class="bm-scene bm-desktop"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="preload" as="image" href="scene/tex/loading-room-v5.jpg"><title>Feiyang Wu · 私人档案室</title><meta name="description" content="雨夜、红光、一张书桌。点击录像带，探索我的个人资料与作品。"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Noto+Sans+SC:wght@500;600;700;850;900&family=VT323&family=Caveat:wght@600&family=Courier+Prime:wght@400;700&display=swap"><link rel="stylesheet" href="scene/desktop.css"><link rel="stylesheet" href="archive.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script></head><body><script>if(new URLSearchParams(location.search).get("capture")==="1")document.documentElement.classList.add("capture");</script><div id="bm-root"><div id="still" aria-hidden="true"><div class="tv-spill"><i></i></div></div>
+<div id="osd" aria-hidden="true"><div class="tv-scr"><div class="tv-pic"><div class="tv-lb">▶▶ LOADING</div><div class="tv-ch">CH 00</div><div class="tv-mid"><div class="tv-cta"></div><div class="tv-meter"><span class="bar"><i></i></span><span class="pc">0%</span></div><div class="tv-mute">ENTER MUTED</div></div></div><div class="tv-noise"></div><div class="tv-glass"></div></div></div>
+<button id="enter" hidden aria-label="Enter the room"></button>
+<button id="enter-muted" hidden>Enter the room with the sound off</button>
+
+<canvas id="gl" aria-label="雨夜的复古书桌。点击电脑旁的录像带，装入播放器后阅读个人资料与作品。"></canvas>
+
+<div class="hud top">
+  <button class="name" id="home-link">FEIYANG WU</button>
+  <nav class="menu" aria-label="Site">
+    <a href="#about" data-page="about">个人资料</a>
+    <a href="#work" data-page="work">作品档案</a>
+    
+    
+  </nav>
+</div>
+
+<!-- the room is the welcome: no caption over it (the top bar carries the links); the name and line stay for readers and search -->
+<h1 class="sr">FEIYANG WU</h1>
+<p class="sr">个人资料 / 运营文档 / Painting / Game</p>
+
+<section class="hud panel" id="panel" hidden aria-labelledby="p-title">
+  <header><div><div class="ch" id="p-ch">CH 01</div><h2 id="p-title">About</h2></div><div class="hbtns"><button class="close" id="p-hide" aria-label="Hide the card, the tape plays on" hidden>HIDE</button><button class="close" id="p-close" aria-label="Back to home">HOME</button></div></header>
+  <div class="body" id="p-body"></div>
+</section>
+
+<div class="hud ctl">
+  <div class="hint" id="hint">点击录像带装入播放器 · 拖动探索书桌 · 滚轮拉近</div>
+  <div class="btns"><button class="sound" id="cardon" aria-label="Show the Work card" hidden>SHOW CARD · N</button><button class="sound" id="unzoom">BACK TO THE DESK · ESC</button><button class="sound" id="credits">来源署名</button><button class="sound" id="sound" aria-pressed="false">SOUND OFF</button></div>
+</div>
+<div id="tip" hidden></div>
+<a id="plink" hidden target="_blank" rel="noopener"></a>
+<div id="err" hidden></div>
+<div id="live" class="sr" aria-live="polite"></div>
+<div id="pc-sr" class="sr" aria-live="polite"></div></div><div class="red-wash" aria-hidden="true"></div><button id="read-archive" hidden>展开阅读 ↗</button><dialog id="archive-reader"><header><span id="archive-number"></span><button id="archive-close" aria-label="关闭阅读">关闭 ×</button></header><article id="archive-content"></article><footer>私人收藏 · 示例资料，待补充真实作品</footer></dialog><script>window.__BM={page:'home',assetBase:new URL('./scene/',location.href).href,about:[["h", "Personal Profile"], ["p", "游戏杂学者，视觉小说爱好者，Cult 片狂热。"], ["p", "PSV / Xbox / Switch 2 拥有者。"], ["p", "淳朴的农民，在《星露谷物语》只种地，且钓鱼不打 Mod。"]],posts:[],postsA:[],aboutHref:'#about',postsHref:'#work'};</script><script src="scene/boot.js"></script><script type="module" src="scene/desktop.js"></script><script src="archive.js"></script><a class="scene-source" href="https://felixrieseberg.com/" target="_blank" rel="noopener">SCENE BY FELIX RIESEBERG · ADAPTED</a></body></html>

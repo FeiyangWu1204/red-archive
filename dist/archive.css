@@ -1,0 +1,19 @@
+.red-wash{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at 96% 55%,#e5291628,transparent 64%);mix-blend-mode:screen}.hud{z-index:3}.menu a{font-family:"Archivo",sans-serif;font-size:15px;letter-spacing:1px}#read-archive{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:5;padding:13px 22px;color:#eadbc9;background:#351f1ddd;border:1px solid #a25943;font:14px monospace;cursor:pointer}#archive-reader{max-width:680px;width:90vw;max-height:80vh;overflow:auto;border:1px solid #766453;padding:0;color:#d7c7ad;background:#1b1917;box-shadow:0 20px 80px #000c;font-family:sans-serif}#archive-reader::backdrop{background:#070606b8;backdrop-filter:blur(8px)}#archive-reader header{display:flex;justify-content:space-between;padding:20px 25px;border-bottom:1px solid #5d4a3c;font:11px monospace;letter-spacing:1px}#archive-reader button{background:none;border:0;color:inherit;cursor:pointer}#archive-reader article{padding:32px 40px 45px;line-height:2.1}#archive-reader h1{font-size:32px;font-weight:400}#archive-reader p{font-size:15px}#archive-reader .note{color:#a38c73;font-size:13px}#archive-reader hr{border:0;border-top:1px solid #4e4032;margin:35px 0}#archive-reader footer{padding:15px 25px;border-top:1px solid #5d4a3c;font-size:11px;color:#93816d}@media(max-width:700px){.menu a{font-size:11px}.hud.top{padding:18px 16px}.name{font-size:19px!important}#read-archive{bottom:74px;white-space:nowrap;font-size:12px}.hint{display:none!important}}
+.scene-source{position:fixed;bottom:22px;left:22px;z-index:4;font:9px monospace;letter-spacing:1px;color:#ded1bd88;text-decoration:none}.scene-source:hover{color:#f0ddc4}@media(max-width:700px){.scene-source{bottom:12px;left:12px;font-size:7px}}
+
+/* Keep navigation in the same heavy display style as the name. */
+nav.menu a{font-family:"Archivo","Noto Sans SC",sans-serif;font-weight:850;font-stretch:125%;font-size:16px;letter-spacing:.03em;line-height:1.25;padding:3px 12px;color:var(--ink)}
+.ctl #credits,.ctl #sound{font-size:10px;line-height:1.3;padding:5px 9px;border-radius:3px;letter-spacing:.05em;background:rgba(15,13,15,.24)}
+.ctl #credits{opacity:.36;border-color:rgba(255,255,255,.18)}
+.ctl #credits:hover,.ctl #credits:focus-visible{opacity:.8}
+.ctl #sound{opacity:.65}
+.ctl #sound:hover,.ctl #sound:focus-visible{opacity:1}
+.ctl .hint{font-size:11px;opacity:.5}
+@media(max-width:760px){nav.menu a{font-size:13px;padding:3px 6px}.ctl #credits,.ctl #sound{font-size:9px;padding:5px 7px}}
+
+/* Clean scene capture used to regenerate the matching loading still. */
+html.capture .hud,html.capture .scene-source,html.capture #osd,html.capture #still,html.capture #read-archive,html.capture #tip{display:none!important}
+
+#archive-reader .profile-kicker{font:10px "Archivo",sans-serif;letter-spacing:2px;color:#a9957c;margin-bottom:22px}
+
+#archive-reader{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;color:#eee3d1}#archive-reader p{font-family:inherit;font-size:16px;line-height:2;font-weight:500}#archive-reader h1{font-family:"Archivo","Noto Sans SC",sans-serif;font-weight:600}#archive-reader article{padding:34px 40px 45px}

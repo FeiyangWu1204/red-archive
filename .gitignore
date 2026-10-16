@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+.openai/
+*.tar.gz
+preview*.png
+loading-capture.png
