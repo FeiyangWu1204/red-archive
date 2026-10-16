@@ -2,7 +2,7 @@
 
 Feiyang Wu 的互动个人网站。Three.js 复古书桌、雨夜窗景、EVA 海报，以及可装入播放器的四卷档案录像带。
 
-在线访问：https://the-red-archive.round-hill-7273.chatgpt.site/
+在线访问：https://feiyangwu1204.github.io/red-archive/
 
 ## 本地运行
 
@@ -26,7 +26,7 @@ python3 -m http.server 8765 --directory dist
 
 ## 部署
 
-`dist/` 是完整的静态网站目录，可部署到支持静态文件的主机。模型、贴图及音效均随目录提供；字体使用 Google Fonts，加载字体需要网络。
+GitHub Pages 从 `codex/github-pages` 分支的根目录发布；`main` 分支保留开发源码，其中 `dist/` 是完整的静态网站目录。模型、贴图及音效均随目录提供；字体使用 Google Fonts，加载字体需要网络。
 
 ## 素材来源
 
